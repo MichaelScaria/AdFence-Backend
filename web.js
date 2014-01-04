@@ -91,6 +91,7 @@ server.listen(port, function() {
 });
 
 io.sockets.on('connection', function(socket) {
+  console.log('LIKE WTF')
   socket.emit('news', { hello: 'world' });
 });
 
