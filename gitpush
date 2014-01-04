@@ -1,0 +1,5 @@
+git add .
+git commit -am"$1"
+git pull heroku master
+git push heroku master
+

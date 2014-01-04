@@ -90,7 +90,7 @@ server.listen(port, function() {
   console.log('Listening on port ' + port);
 });
 
-io.socket.on('connection', function(socket) {
+io.sockets.on('connection', function(socket) {
   socket.emit('news', { hello: 'world' });
 });
 
