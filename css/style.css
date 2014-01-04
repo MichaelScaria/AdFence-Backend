@@ -1,0 +1,39 @@
+/* CSS RESETS */
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: #f8f8f8;
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Helvetica', sans-serif;
+  /* If you have a custom font that has a separate Bold font file, add this line and make the font-family the Bold font.
+  font-weight: normal;*/
+  margin: 0;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  padding: 20px;
+}
