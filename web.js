@@ -96,6 +96,10 @@ io.sockets.on('connection', function(socket) {
   socket.on('rawData', function (data) {
     console.log('WTF ', data);
   });
+
+  socket.on('/rawData', function (data) {
+    console.log('WTF ', data);
+  });
 });
 
 
