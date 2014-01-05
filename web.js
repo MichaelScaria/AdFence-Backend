@@ -146,11 +146,11 @@ io.sockets.on('connection', function(socket) {
     console.log('WTF3 ', data['values']);
     var stringed = data['values'];
     // console.log(stringed)
-    getData(stringed)
-    train(0);
+    var t = getData(stringed)
+    var h = train(0);
 
-    var result = query();
-    onsole.log('RESULT ' + result);
+    // var result = query();
+    console.log('RESULT ' + t + '                      ' + h);
     socket.emit('result', { hello: data });
 
   });
