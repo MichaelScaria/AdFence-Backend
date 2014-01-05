@@ -51,17 +51,11 @@ app.configure('production', function() {
 /******************/
 
 // home route
-
-app.get('/',  function() {
-  
-  console.log('hi');
-
-  // for(var i=0; i<numFeatures; i++) {
-    //console.log(featureSum[0][i]+" "+featureSum2[0][i]+" "+featureAvg[0][i]+" "+featureStd[0][i]);
-  // }
+app.get('/', function (req, res) {
   console.log('GET ' + req.url);
   res.render('index');
 });
+
 // assets route
 app.get('/(*).(css|js)', function (req, res) {
   console.log('GET ' + req.url);
