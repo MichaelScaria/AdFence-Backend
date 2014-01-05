@@ -132,6 +132,7 @@ io.sockets.on('connection', function(socket) {
   socket.emit('news', { hello: 'world' });
 
   socket.on('rawData', function (data,fn,session,socket) {
+    console.log('test')
     // for(var i=0; i<10000; i+=2) {
     //   getData("6,5");
     //   getData("5,6");
@@ -150,7 +151,7 @@ io.sockets.on('connection', function(socket) {
     // var result = query();
     // console.log('RESULT ' + result);
     console.log('WTF3 ', data);
-    // socket.emit('result', { hello: result });
+    socket.emit('result', { hello: data });
 
   });
 
