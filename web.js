@@ -145,10 +145,10 @@ io.sockets.on('connection', function(socket) {
     var stringed = data.join(",")
     console.log(stringed)
     getData(stringed)
-    train(1);
+    train(0);
 
-    var result = query();
-    console.log('RESULT ' + result);
+    // var result = query();
+    // console.log('RESULT ' + result);
     console.log('WTF3 ', data);
     // socket.emit('result', { hello: result });
 
