@@ -93,22 +93,10 @@ server.listen(port, function() {
 io.sockets.on('connection', function(socket) {
   socket.emit('news', { hello: 'world' });
 
-  socket.on('rawData', function (data) {
-    console.log('WTF ', data);
-  });
-
-  socket.on('/rawData', function (data) {
-    console.log('WTF2 ', data);
-  });
-
   socket.on('rawData', function (data,fn,session,socket) {
     console.log('WTF3 ', data);
   });
 
-  socket.on('/rawData', function (data,fn,session,socket) {
-    console.log('WTF4 ', data);
-  });
-  
 });
 
 
