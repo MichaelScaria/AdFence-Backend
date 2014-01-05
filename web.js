@@ -145,13 +145,12 @@ io.sockets.on('connection', function(socket) {
     // }
     console.log('WTF3 ', data['values']);
     var stringed = data['values'];
-    console.log(stringed)
+    // console.log(stringed)
     getData(stringed)
     train(0);
 
-    // var result = query();
-    // console.log('RESULT ' + result);
-    console.log('WTF3 ', data);
+    var result = query();
+    onsole.log('RESULT ' + result);
     socket.emit('result', { hello: data });
 
   });
