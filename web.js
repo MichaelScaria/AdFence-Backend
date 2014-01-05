@@ -143,8 +143,8 @@ io.sockets.on('connection', function(socket) {
     //   getData("10,11");
     //   getData("11,10");
     // }
-    console.log('WTF3 ', data);
-    var stringed = data;
+    console.log('WTF3 ', data['values']);
+    var stringed = data['values'];
     console.log(stringed)
     getData(stringed)
     train(0);
