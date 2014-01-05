@@ -133,16 +133,6 @@ io.sockets.on('connection', function(socket) {
 
   socket.on('rawData', function (data,fn,session,socket) {
     console.log('test')
-    // for(var i=0; i<10000; i+=2) {
-    //   getData("6,5");
-    //   getData("5,6");
-    // }
-    // train(0);
-    // clearData();
-    // for(var i=0; i<10000; i+=2) {
-    //   getData("10,11");
-    //   getData("11,10");
-    // }
     // console.log('WTF3 ', data['values']);
     var stringed = data['values'];
     console.log('WTF: ', stringed)
