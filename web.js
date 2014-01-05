@@ -8,7 +8,7 @@ var express = require('express')     // gets express
   , port = process.env.PORT || 3000
   , http = require('http')
   , server = http.createServer(app)
-  , io = require('socket.io').listen(app); // sets the port either to the env var PORT or 3000
+  , io = require('socket.io').listen(server); // sets the port either to the env var PORT or 3000
 
 /*********************/
 /***** CONFIGURE *****/
