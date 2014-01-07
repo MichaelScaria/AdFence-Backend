@@ -1,5 +1,9 @@
 AdFence backend for AT&T Developer Summit Hackathon 2014
 
+==================
+
+Socket.io was failing before the presentation, so we decided to hardcode the mood in client (https://github.com/MichaelScaria/AdFence), but in the rawData callback, can see the frequency based naive bayesian algorithm that determines the mood.
+
 ====================
 
 Do you guys remember in Minority Report when Tom Hanks is walking through the mall and the ads he sees are tailored to his personality? Well with AdFence, we are making it real. Let’s say that you are strolling through a shopping center. With AdFence, we’ll show you advertisements that make sense for what stores are nearby AND how you’re currently feeling. It’s a custom experience- for everyone. 
